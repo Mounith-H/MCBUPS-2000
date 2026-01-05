@@ -1994,6 +1994,12 @@
 		(uuid "2fdfca5f-b411-4271-b95f-21232276ba4f")
 	)
 	(junction
+		(at 68.58 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "348e7c5e-819e-4882-99dc-c6db0e907a07")
+	)
+	(junction
 		(at 139.065 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2570,6 +2576,16 @@
 			(type default)
 		)
 		(uuid "5b2437d7-92a2-4703-a8f1-cc9b3401eb2b")
+	)
+	(wire
+		(pts
+			(xy 68.58 182.245) (xy 68.58 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e5649f8-d119-4aac-be74-436e3d753b45")
 	)
 	(wire
 		(pts
@@ -3281,6 +3297,16 @@
 		)
 		(uuid "fde8092b-9ecc-40ce-8043-60e4cdf9eb48")
 	)
+	(wire
+		(pts
+			(xy 68.58 170.18) (xy 68.58 172.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffef6c8f-b170-451a-9dc9-2bf90b43fcd8")
+	)
 	(label "J2_RL0"
 		(at 163.83 41.91 180)
 		(effects
@@ -3329,7 +3355,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "20k"
 			(at 76.835 65.4051 90)
 			(effects
 				(font
@@ -3800,7 +3826,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "2.2k"
 			(at 81.28 135.8899 0)
 			(effects
 				(font
@@ -3991,7 +4017,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 106.045 139.065 90)
 			(effects
 				(font
@@ -4077,7 +4103,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 107.315 115.57 90)
 			(effects
 				(font
@@ -4224,7 +4250,7 @@
 		(fields_autoplaced yes)
 		(uuid "17e547c3-7b22-4168-9551-420a339df06f")
 		(property "Reference" "C13"
-			(at 41.275 43.5609 0)
+			(at 41.91 43.5609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,8 +4258,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_P"
-			(at 41.275 46.1009 0)
+		(property "Value" "47uF"
+			(at 41.91 46.1009 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,6 +4457,94 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Elektuur:R")
+		(at 68.58 177.165 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26e3f46a-06a3-4050-bb85-7466634b4c6b")
+		(property "Reference" "R112"
+			(at 71.755 175.8949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 71.755 178.4349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "resistor"
+			(at 68.58 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Indicator" "+"
+			(at 71.755 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "W"
+			(at 66.04 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ad628f21-de8c-4c8a-949d-33e7d4114660")
+		)
+		(pin "1"
+			(uuid "38ef9ffe-e763-402f-a4bb-1f5aed57ff3c")
+		)
+		(instances
+			(project "MCBUPS"
+				(path "/bce3dcac-4a87-4902-86a6-a59da237e6a9/5f428e04-1417-41b3-90f8-d762af1aaa33"
+					(reference "R112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+8V")
 		(at 78.74 48.895 0)
 		(unit 1)
@@ -4514,7 +4628,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "10k"
 			(at 76.835 101.6001 90)
 			(effects
 				(font
@@ -4854,7 +4968,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 88.265 167.64 90)
 			(effects
 				(font
@@ -5612,6 +5726,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 68.58 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77c77b46-95bf-41d6-86af-b7bf02f50399")
+		(property "Reference" "#PWR02"
+			(at 68.58 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 188.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9f1e8ed-110c-4e30-ad1b-e5e04b05e910")
+		)
+		(instances
+			(project "MCBUPS"
+				(path "/bce3dcac-4a87-4902-86a6-a59da237e6a9/5f428e04-1417-41b3-90f8-d762af1aaa33"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Elektuur:R")
 		(at 86.995 143.51 90)
 		(unit 1)
@@ -5628,7 +5808,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 86.995 139.065 90)
 			(effects
 				(font
@@ -5961,7 +6141,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 107.315 167.64 90)
 			(effects
 				(font
@@ -6352,7 +6532,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ee1e6bf-bc1f-47d2-9bf5-2d72b20e0398")
 		(property "Reference" "C14"
-			(at 64.135 44.1959 0)
+			(at 64.77 44.1959 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,8 +6540,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_P"
-			(at 64.135 46.7359 0)
+		(property "Value" "10uF"
+			(at 64.77 46.7359 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6707,7 +6887,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3b16cbf-23f6-4e6e-8867-34357a1caf37")
 		(property "Reference" "R82"
-			(at 81.915 90.1699 0)
+			(at 81.28 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6715,8 +6895,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5.7k"
-			(at 81.915 92.7099 0)
+		(property "Value" "2.7k"
+			(at 81.28 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,7 +8290,7 @@
 		(fields_autoplaced yes)
 		(uuid "f31fd726-6458-4584-96ac-98f1b0d7537a")
 		(property "Reference" "R77"
-			(at 81.915 53.9749 0)
+			(at 81.28 53.9749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8118,8 +8298,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2k"
-			(at 81.915 56.5149 0)
+		(property "Value" "1k"
+			(at 81.28 56.5149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8271,7 +8451,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 107.315 57.15 90)
 			(effects
 				(font
